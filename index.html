@@ -2676,15 +2676,16 @@
 
         const data = await response.json();
         console.log('=== 4. Full response data:', data);
-        console.log('=== 5. Request ID:', data.id);
-        console.log('=== 6. Type of ID:', typeof data.id);
+        console.log('=== 5. Request ID:', data.request_id);  // ✅ 수정!
+        console.log('=== 6. Type of ID:', typeof data.request_id);
         
-        if (!data.id) {
-            console.error('=== ERROR: No ID in response!');
+        if (!data.request_id) {  // ✅ 수정!
+            console.error('=== ERROR: No request_id in response!');
             console.error('Response keys:', Object.keys(data));
+            throw new Error('No request_id received from API');
         }
         
-        return data.id;
+        return data.request_id;  // ✅ 수정!
         
     } catch (error) {
         console.error('=== Submit error:', error);
