@@ -2124,8 +2124,7 @@
     <div id="loading-screen">
         <video autoplay muted playsinline id="loadingVideo">
             <!-- ✅ 복구 -->
-<!-- ✅ 수정 -->
-<source src="/intro-aibg-vid.mp4" type="video/mp4">
+<source src="intro-aibg-vid.mp4" type="video/mp4">
         </video>
         
         <div class="loader-content">
@@ -2145,7 +2144,7 @@
     <nav id="navbar">
         <div class="nav-container">
            <div class="logo">
-    <img src="file:///Users/nathanyu/Desktop/AIBG/aibg-logo.png" alt="AIBG Logo" style="width: 45px; height: 45px;">
+    <img src="/aibg-logo.png" alt="AIBG Logo" style="width: 45px; height: 45px;">
     AI BattleGround
 </div>
             <div style="display:flex; gap:0.75rem; align-items:center;">
@@ -2807,7 +2806,7 @@
         <div class="footer-content">
             <div class="footer-brand">
                 <div class="logo">
-    <img src="file:///Users/nathanyu/Desktop/AIBG/aibg-logo.png" alt="AIBG Logo"> alt="AIBG Logo"> alt="AIBG Logo" style="width: 45px; height: 45px;">
+    <img src="/aibg-logo.png" alt="AIBG Logo" style="width: 45px; height: 45px;">
     AI BattleGround
 </div>
                 <p class="footer-desc">
@@ -3236,26 +3235,25 @@ return videoData;
         // ========== Gallery Grid ==========
 const galleryGrid = document.getElementById('galleryGrid');
 const videos = [
-    'file:///Users/nathanyu/Desktop/AIBG/gridvid/sample1.mp4',
-    'file:///Users/nathanyu/Desktop/AIBG/gridvid/sample2.mp4',
-    'file:///Users/nathanyu/Desktop/AIBG/gridvid/sample3.mp4',
-    'file:///Users/nathanyu/Desktop/AIBG/gridvid/sample4.mp4',
-    'file:///Users/nathanyu/Desktop/AIBG/gridvid/sample5.mp4',
-    'file:///Users/nathanyu/Desktop/AIBG/gridvid/sample6.mp4',
-    'file:///Users/nathanyu/Desktop/AIBG/gridvid/sample7.mp4',
-    'file:///Users/nathanyu/Desktop/AIBG/gridvid/sample8.mp4',
-    'file:///Users/nathanyu/Desktop/AIBG/gridvid/sample9.mp4',
-    'file:///Users/nathanyu/Desktop/AIBG/gridvid/sample10.mp4',
-    'file:///Users/nathanyu/Desktop/AIBG/gridvid/sample11.mp4',
-    'file:///Users/nathanyu/Desktop/AIBG/gridvid/sample12.mp4',
-    'file:///Users/nathanyu/Desktop/AIBG/gridvid/sample13.mp4',
-    'file:///Users/nathanyu/Desktop/AIBG/gridvid/sample14.mp4',
-    'file:///Users/nathanyu/Desktop/AIBG/gridvid/sample15.mp4',
-    'file:///Users/nathanyu/Desktop/AIBG/gridvid/sample16.mp4',
-    'file:///Users/nathanyu/Desktop/AIBG/gridvid/sample17.mp4',
-    'file:///Users/nathanyu/Desktop/AIBG/gridvid/sample18.mp4',
-    'file:///Users/nathanyu/Desktop/AIBG/gridvid/sample19.mp4',
-    'file:///Users/nathanyu/Desktop/AIBG/gridvid/sample20.mp4'
+    '/gridvid/sample1.mp4',
+    '/gridvid/sample2.mp4',
+    '/gridvid/sample3.mp4',
+    '/gridvid/sample4.mp4',
+    '/gridvid/sample5.mp4',
+    '/gridvid/sample6.mp4',
+    '/gridvid/sample7.mp4',
+    '/gridvid/sample8.mp4',
+    '/gridvid/sample9.mp4',
+    '/gridvid/sample10.mp4',
+    '/gridvid/sample11.mp4',
+    '/gridvid/sample12.mp4',
+    '/gridvid/sample13.mp4',
+    '/gridvid/sample14.mp4',
+    '/gridvid/sample15.mp4',
+    '/gridvid/sample16.mp4',
+    '/gridvid/sample17.mp4',
+    '/gridvid/sample19.mp4',
+    '/gridvid/sample20.mp4'
 ];
 const gradients = [
     'linear-gradient(135deg, #a855f7, #ec4899)',
